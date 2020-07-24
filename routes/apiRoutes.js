@@ -13,10 +13,6 @@ module.exports = function (app) {
     //req.body added into db.json
     db.push(req.body);
     console.log(db);
-    // var data = JSON.stringify(db);
-    //console.log(JSON.parse(db));
-
-    // writeToFile(db);
 
     fs.writeFile("./db/db.json", JSON.stringify(db), function (err) {
       if (err) {
@@ -30,32 +26,23 @@ module.exports = function (app) {
     //res.json(db);
   });
 
-  // function writeToFile(db) {
-  //   fs.writeFile("./db/db.json", JSON.stringify(db), function (err) {
-  //     if (err) {
-  //       throw err;
-  //     }
-  //     console.log("good!");
-  //   });
-  // }
-
   //  * DELETE`/api/notes/:id` - Should receive a query parameter containing the id of a note to delete.This means you'll need to find a way to give each note a unique `id` when it's saved.In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-  app.post("/api/tables", function (req, res) {
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
-    } else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
-  });
+  // app.post("/api/tables", function (req, res) {
+  //   if (tableData.length < 5) {
+  //     tableData.push(req.body);
+  //     res.json(true);
+  //   } else {
+  //     waitListData.push(req.body);
+  //     res.json(false);
+  //   }
+  // });
 
-  app.post("/api/clear", function () {
-    // Empty out the arrays of data
-    tableData = [];
-    waitListData = [];
+  // app.post("/api/clear", function () {
+  //   // Empty out the arrays of data
+  //   tableData = [];
+  //   waitListData = [];
 
-    console.log(tableData);
-  });
+  //   console.log(tableData);
+  // });
 };
