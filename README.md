@@ -20,15 +20,15 @@ Created by [BMcCorm](https://github.com/BMcCorm)
 
 ## Description
 
-This application is used to write, save, and delete notes. It uses express to save and retrieve note data from a JSON file.
+This application allows the user to write, save, and delete notes. It uses express to save and retrieve note data from a JSON file.
 
 ## Installation
 
-This user-friendly interface does not require installation. Simply click [here.](https://BMcCorm.github.io/Note-Taker/) to begin.
+This user-friendly interface does not require installation. It's hosted on Heroku and can be found [here.](https://note-taker-bm.herokuapp.com/)
 
 ## Usage
 
-Once on the homepage,. Then, enter a note and title. Click save to add your message. Once the note is no longer neeed, simply click the trash icon associated to each note to delete it.
+Once on the homepage, click on "get started." The user is directed to the notes page, where new messages can be entered and deleted. Simply add your note and hit the save icon. Once the note is no longer needed, click the associated trash icon to delete it. <br> <br> ![App Demo](public/assets/css/Note-Taker-demo.gif)
 
 ## Interested in contributing? Here's how:
 
@@ -54,5 +54,5 @@ No license at this time.
 
 ## Questions
 
-For more information, please email me at BrielleMcCormick@gmail.com
-The link for this project can be found [here.](https://BMcCorm.github.io/Note-Taker/)
+For more information, please email me at BrielleMcCormick@gmail.com <br>
+The GitHub link for this project can be found [here](https://BMcCorm.github.io/Note-Taker/).
